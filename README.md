@@ -14,7 +14,7 @@ To run a training, open the project in unity and create a build, including the g
 
 ![Build Info][buildInfo]
 
-[buildInfo]: https://raw.githubusercontent.com/transitional-forms-inc/AgenceTraining/gameDynamics/docs/buildImg.png?token=AGB6HBRRAMA43F6APJNKRJS7NPBAI
+[buildInfo]: https://raw.githubusercontent.com/transitional-forms-inc/AgenceTrainingEnvironment/master/docs/buildImg.png?token=AGB6HBTIUSXJ4BMSYFIMGGC7NTDUE
 
 Then run your training using ML-agents' _mlagents-learn_ command in your python environment.
 
