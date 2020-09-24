@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33260b3518e6f52438e7699b51256bcf, type: 3}
+  m_Name: SettingsContainer
+  m_EditorClassIdentifier: 
+  BuildSettings: {fileID: 11400000, guid: 60a65eac4013de642b23a9abf3c9660c, type: 2}
+  AgentSettings: {fileID: 11400000, guid: ffeabf1dc1b7c6243b1c5b4939e506e2, type: 2}
+  McGuffinSettings: {fileID: 11400000, guid: 58f33463662e8c047b9f9e5e5a7bc0cb, type: 2}
+  PlanetSettings: {fileID: 11400000, guid: 63ea0e0f941854b408704a0eaf97aac7, type: 2}
+  RewardSettings: {fileID: 11400000, guid: b7849876910455d48beb38de1de04a77, type: 2}
+  TowerSettings: {fileID: 11400000, guid: 2523926b7b1113949b4e378b8aacc9d4, type: 2}
+  InteractionSettings: {fileID: 11400000, guid: ad9601a3e1642ff48bc7aa1079052992,
+    type: 2}

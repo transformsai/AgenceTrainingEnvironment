@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f36f866ab64348a89e3d0f4228a0a25, type: 3}
+  m_Name: New Agent Settings
+  m_EditorClassIdentifier: 
+  fallThreshold: -0.5
+  lifetime: 100000
+  eyeHeight: 1.45
+  mass: 0
+  massWhenWoke: 0
+  willUseProximity: 1
+  retargetChanceIncrease: 0.1
+  retargetUrgencyDenominator: 5
+  EmotionDecayRatePerSecond: 0.03
+  OverrideEmotionRatePerSecond: 0.1
+  nurtureMaxDistance: 0
+  ConsumePointRemainDelay: 1
+  slipFloorAngle: 30
+  cowerDuration: 3
+  mcgCowerDelay: 0.25
+  forwardForce: 0
+  strafeForce: 0
+  backPedalForce: 0
+  brakeDrag: 0
+  moveDrag: 0
+  fallDrag: 0
+  turnSpeed: 0
+  maxSpeed: 0
+  moveStaminaCost: 0.25
+  speedMultiplier: 0
+  speedMultiplierWhenWoke: 0
+  pushForce: 0
+  pushCooldown: 0
+  pushCastDelay: 0.55
+  pushCastHeight: 0.75
+  pushCastLM:
+    serializedVersion: 2
+    m_Bits: 1024
+  pushDistance: 0.5
+  stunDuration: 0
+  pushReceivedVFX: {fileID: 0}
+  minSitDuration: 0.5
+  staminaRecoveryRate: 1
+  grabRange: 2.5
+  grabCooldown: 0.4
+  minHoldStamina: 0.01
+  holdStaminaCost: 0.15
+  frictionlessMaterial: {fileID: 0}
+  grabbedPinPow: 8
+  grabbedPinDistanceFalloff: 0
+  grabbedMuscleSpring: 1200
+  grabbedMuscleDamper: 100
+  grabbedPosition: {x: 0, y: 1.5, z: 0.5}
+  WokeStateDuration: 30

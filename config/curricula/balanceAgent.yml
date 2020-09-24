@@ -1,0 +1,7 @@
+BalanceAgent:
+  measure: progress
+  thresholds: [0.7, 0.8, 0.9, 1]
+  min_lesson_length: 250
+  signal_smoothing: true
+  parameters:
+    numWeights: [1, 2, 3, 4, 5]
