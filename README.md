@@ -32,4 +32,5 @@ Do note, all submitted agents must have an unmodified observation and action spa
 
 ### Submitting Trainings
 
-*Something here*
+If you come across interesting trainings, you can submit them for creative review by filling out this form:
+https://forms.gle/7nCBWBUXus3nAXCV7
