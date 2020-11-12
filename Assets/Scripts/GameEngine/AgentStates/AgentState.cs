@@ -9,7 +9,7 @@ public abstract class AgentState : IState
 
     public string Name { get; }
 
-    protected SettingsContainer Settings => SettingsContainer.Instance;
+    protected SettingsContainer Settings => GameManager.Settings;
     protected Transform Transform => Controller.transform;
     protected Rigidbody Rigidbody => Controller.rigidbody;
     protected AgentState CurrentState => Controller.CurrentState;

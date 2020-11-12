@@ -5,6 +5,7 @@ using Unity.MLAgents.Policies;
 using Unity.MLAgents.Sensors;
 using UnityEngine;
 
+
 public class AgenceRLAgent : Agent, IAgenceAgent
 {
     public AgentController Controller;
@@ -115,7 +116,7 @@ public class AgenceRLAgent : Agent, IAgenceAgent
         var targetPos = rotation * relpos;
         var absPos = targetPos + World.Centre;
 
-        var relPoint = WorldToRelativePoint(absPos) * SettingsContainer.Instance.RLMovementMagnitude;
+        var relPoint = WorldToRelativePoint(absPos) * GameManager.Settings.rlMovementMagnitude;
         return relPoint;
     }
 

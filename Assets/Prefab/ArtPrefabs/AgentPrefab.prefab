@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6473625368305542968}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TrainingGeo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 3013818663324536234}
   - component: {fileID: 7447899085578894182}
   - component: {fileID: 5071389928619781310}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 8781112208691007430}
   - component: {fileID: 5820949231550596590}
   - component: {fileID: 6308912214356022833}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: AgentPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,8 +242,8 @@ Rigidbody:
   m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 7828507734489865329}
   - component: {fileID: 2705757764591535648}
   - component: {fileID: 8564375273871621141}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,6 +389,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 310310083055053300, guid: cd9834a0f96214fd49d93c6ae84ef96a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3401695061456298319, guid: cd9834a0f96214fd49d93c6ae84ef96a,
         type: 3}

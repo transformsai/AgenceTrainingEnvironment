@@ -4,7 +4,7 @@ public class ConsumingState : AgentState
 {
     public override bool CanEnter => _closestConsumePoint &&
                                      _closestConsumePoint.CanBeConsumed &&
-    _timeInConsumePoint > Settings.ConsumePointRemainDelay;
+    _timeInConsumePoint > Settings.consumePointRemainDelay;
 
     public float? LastConsumeTime = null;
     private float _timeInConsumePoint;
@@ -29,7 +29,7 @@ public class ConsumingState : AgentState
 
         _closestConsumePoint = closestCP;
 
-        if (_closestConsumePoint && ConsumeDistanceTo(_closestConsumePoint) < Settings.nurtureMaxDistance)
+        if (_closestConsumePoint && ConsumeDistanceTo(_closestConsumePoint) < Settings.consumeMaxDistance)
             _timeInConsumePoint += Time.deltaTime;
         else
             _timeInConsumePoint = 0;
@@ -95,5 +95,5 @@ public class ConsumingState : AgentState
 
     public float ConsumeProgress => Mathf.Clamp01((Time.time - _enterTime) / ConsumeDuration);
 
-    private static float ConsumeDuration => SettingsContainer.Instance.ConsumeDuration;
+    private static float ConsumeDuration => GameManager.Settings.consumeDuration;
 }

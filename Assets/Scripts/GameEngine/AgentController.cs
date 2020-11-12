@@ -11,7 +11,7 @@ public class AgentController : MonoBehaviour, IStateMachine<AgentState>
     public World World => _world ? _world : _world = GetComponentInParent<World>();
 
     
-    private SettingsContainer Settings => SettingsContainer.Instance;
+    private SettingsContainer Settings => GameManager.Settings;
 
     // State
     public bool IsGrounded;
@@ -57,7 +57,7 @@ public class AgentController : MonoBehaviour, IStateMachine<AgentState>
     private AgentState _currentState;
 
     public float StaminaCost => Time.fixedDeltaTime * Settings.moveStaminaCost;
-    public bool HasFallen => transform.localPosition.y < SettingsContainer.Instance.killHeight;
+    public bool HasFallen => transform.localPosition.y < GameManager.Settings.killHeight;
     public bool IsFalling { get; private set; }
 
 
@@ -188,7 +188,7 @@ public class AgentController : MonoBehaviour, IStateMachine<AgentState>
         }
 
         var height = transform.position.y - World.transform.position.y;
-        if (height < SettingsContainer.Instance.killHeight) Destroy(gameObject);
+        if (height < GameManager.Settings.killHeight) Destroy(gameObject);
     }
 
     private void FixedUpdate()
@@ -196,7 +196,7 @@ public class AgentController : MonoBehaviour, IStateMachine<AgentState>
         // Without this, FixedUpdate is called once even after disabling the script
         if (!enabled) return;
 
-        rigidbody.mass = Settings.AgentMass;
+        rigidbody.mass = Settings.agentMass;
         ObserveGround();
 
         if (!(CurrentState is HoldingPlanetState))

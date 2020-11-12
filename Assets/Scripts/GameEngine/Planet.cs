@@ -6,7 +6,7 @@ public class Planet : MonoBehaviour
 {
     public new Collider collider;
     public Rigidbody InertialWorld;
-    private SettingsContainer settings => SettingsContainer.Instance;
+    private SettingsContainer settings => GameManager.Settings;
     public float Radius;
     public new Rigidbody rigidbody;
 
@@ -58,7 +58,7 @@ public class Planet : MonoBehaviour
         // Apply settings
         Radius = transform.TransformVector(Vector3.right).magnitude;
         InertialWorld.angularDrag = settings.angularDrag;
-        InertialWorld.mass = settings.PlanetMass;
+        InertialWorld.mass = settings.planetMass;
         InertialWorld.maxAngularVelocity = settings.maxVelocity;
 
         // Add torque from non-colliding weights
