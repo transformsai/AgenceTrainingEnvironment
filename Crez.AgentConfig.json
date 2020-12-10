@@ -45,18 +45,8 @@
         "McGuffin3Flower3Availability"
     ],
     "Actions"      : [
-        "MoveFwdBack",
-        "MoveLeftRight",
-        "Consume",
-        "Attack",
-        "HoldPlanet",
         "Sit"
     ],
     "Rewards"      : {
-        "SurvivalTick" : 0,
-        "PushCompleted" : 0,
-        "ConsumeTick"   : 1,
-        "ConsumeCompleted" : 0,
-        "ThisAgentDied"    : 0
     }
 }

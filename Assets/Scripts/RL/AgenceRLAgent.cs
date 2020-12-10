@@ -22,7 +22,7 @@ public class AgenceRLAgent : Agent, IAgenceAgent
 
     protected override void OnEnable()
     {
-        Config = ConfigLoader.GetConfig(Controller.AgentName);
+        Config = ConfigLoader.GetConfig(Controller.AgentName, false);
         var parameters = BrainParams.BrainParameters;
         parameters.VectorActionSize = new []{Config.Actions.Length};
         parameters.VectorObservationSize =
